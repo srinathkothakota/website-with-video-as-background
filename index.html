@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/189cfdb464.js" crossorigin="anonymous"></script><!--font awesome link-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="showcase active">
+      <header>
+          <h2 class="logo">Travel</h2>
+          <div class="toggle active">
+            <i class="fas fa-align-justify fa-2x"></i>
+           
+
+          </div>
+          
+      </header>
+       <video src="travel.mp4" muted loop autoplay></video>
+       <div class="overlay"></div>
+       <div class="text">
+           <h2>Remember to explore!</h2>
+           <h3></h3>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum repellendus modi hic, numquam maiores earum suscipit aut corporis molestiae praesentium perspiciatis, dicta recusandae distinctio est tenetur optio nemo omnis ducimus?</p>
+           <a href="#">Explorer</a>
+           <ul id="social">
+            
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
+           </ul>
+       </div>
+  </section>
+  <div class="menu">
+      <ul >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+    <script>
+        const menuToggle=document.querySelector('.toggle')
+        const showcase=document.querySelector('.showcase')
+        menuToggle.addEventListener('click',()=>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
